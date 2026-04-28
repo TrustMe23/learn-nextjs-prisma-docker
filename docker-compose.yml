@@ -26,7 +26,7 @@ services:
       DATABASE_URL: "postgresql://student:student@db:5432/learn?schema=public"
     ports:
       - "3000:3000"
-    command: sh -c "npx prisma@5.22.0 migrate deploy && node server.js"
+    command: sh -c "node node_modules/prisma/build/index.js db push --accept-data-loss && node server.js"
 
 volumes:
   db_data:
