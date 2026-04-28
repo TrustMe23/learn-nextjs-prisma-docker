@@ -41,7 +41,23 @@ export default function HomePage() {
 
   return (
     <main>
-      <h1>🛒 Products</h1>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <h1>🛒 Products</h1>
+        <a
+          href="/learn"
+          style={{
+            background: "#3b82f6",
+            color: "white",
+            padding: "8px 16px",
+            borderRadius: 8,
+            textDecoration: "none",
+            fontWeight: 600,
+            fontSize: 14,
+          }}
+        >
+          🎬 See how it works
+        </a>
+      </div>
       <p style={{ color: "#666" }}>
         Browser → <code>/api/products</code> → Prisma → Postgres
       </p>
